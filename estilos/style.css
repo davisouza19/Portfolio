@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
   Variáveis para cores:
   --fundo-principal
@@ -7,3 +8,12 @@
   --destaque-inverso
   --fundo-card
 */
+
+body{
+  background: linear-gradient(to top, rgb(74, 192, 72), rgb(149, 53, 193));
+  color: #d3d3d3;
+  font-size: 40px;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
