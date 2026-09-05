@@ -138,4 +138,43 @@ article>h2{
   border-radius: 8px;
 }
 
- 
+#skills .skill-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skills .skill-container .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info>.skill{
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.info>.porcento{
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+.barra{
+  background-color: var(--fundo-principal);
+  height: 9px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.barra>.progresso{
+  background-color: var(--destaque-inverso);
+  height: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #skills .skill-container{
+   grid-template-columns: 1fr 1fr;
+  }
+}
