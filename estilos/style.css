@@ -6,6 +6,7 @@
   text-decoration: none;
   box-sizing: border-box;
   transition: .4s;
+  scroll-behavior: smooth;
  }
 
  :root{
@@ -117,7 +118,7 @@ article{
 
 article>h2{
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #video>.video-container{
@@ -177,4 +178,34 @@ article>h2{
   #skills .skill-container{
    grid-template-columns: 1fr 1fr;
   }
+}
+
+.formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.curso{
+  background-color: var(--fundo-principal);
+  padding: 5px 20px;
+  border-radius: 8px;
+  border-left: 6px solid var(--destaque-inverso);
+}
+
+.curso:hover{
+  border-left: 12px solid var(--destaque);
+  cursor: pointer;
+}
+
+.curso>.tempo{
+  font-weight: bold;
+  font-size: 0.8em;
+  color: var(--texto);
+}
+
+.curso>.instituicao{
+  color: var(--destaque-inverso);
+  font-weight: bold;
+  font-size: 1.2em;
 }
