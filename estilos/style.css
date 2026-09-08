@@ -206,39 +206,45 @@ article>h2{
 
 .projeto-container{
   display: flex;
+  flex-direction: column-reverse;
+}
+
+.projeto{
+  display: flex;
   flex-direction: column;
   background-color: var(--fundo-principal);
   padding: 15px;
   border-radius: 8px;
   border-left: 6px solid var(--destaque-inverso);
+  margin-bottom: 20px;
 }
 
-.projeto-container:hover{
+.projeto:hover{
   border-left: 12px solid var(--destaque);
 }
 
-.projeto-container>img{
+.projeto>img{
   border-radius: 8px;
 }
 
-.projeto-container .periodo{
+.projeto .periodo{
   margin-top: 17px;
 }
 
-.projeto-container .periodo:hover{
+.projeto .periodo:active{
   text-decoration: underline;
 }
 
-.projeto-container .h3,p,details{
+.projeto .h3,p,details{
   line-height: 23px;
 }
 
-.projeto-container h3{
+.projeto h3{
   margin: 7px 0px;
   font-size: 1.3em;
 }
 
-.projeto-container details summary{
+.projeto details summary{
   font-weight: bold;
 }
 
@@ -266,13 +272,13 @@ footer>p>a:hover{
    grid-template-columns: 1fr 1fr;
   }
 
-  .projeto-container{
+  .projeto{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 
-  .projeto-container>img{
+  .projeto>img{
     max-width: 20%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -280,7 +286,7 @@ footer>p>a:hover{
     max-height: 200px;
   }
 
-  .projeto-container>.projeto-info{
+  .projeto>.projeto-info{
     max-width: 80%;
     margin-top: -20px;
   }
