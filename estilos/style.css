@@ -242,6 +242,25 @@ article>h2{
   font-weight: bold;
 }
 
+footer{
+  background-color: var(--destaque);
+}
+
+footer>p{
+  color: var(--texto-inverso);
+  text-align: center;
+}
+
+footer>p>a{
+  color: var(--texto-inverso);
+  font-weight: bold;
+}
+
+footer>p>a:hover{
+  color: var(--destaque-inverso);
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   #skills .skill-container{
    grid-template-columns: 1fr 1fr;
