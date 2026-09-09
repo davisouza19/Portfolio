@@ -262,6 +262,25 @@ article>h2{
   font-weight: bold;
 }
 
+.projeto .button-container{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.projeto .button-container>.site-button, .projeto .button-container>.code-button{
+  background-color: var(--destaque-inverso);
+  color: var(--texto);
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projeto .button-container>.site-button:active, .projeto .button-container>.code-button:active{
+  background-color: var(--destaque);
+  transition: 0s;
+}
+
 footer{
   background-color: var(--destaque);
   padding: 12px;
@@ -278,13 +297,16 @@ footer>p>a{
 }
 
 footer>p>a:hover{
-  color: var(--destaque-inverso);
   text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
   main{
     grid-template-columns: auto 300px 1fr auto;
+  }
+
+  li.home{
+    display: none;
   }
 
   #ficha{
